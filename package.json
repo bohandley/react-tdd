@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .js",
     "test": "echo \"All tests passed\" && exit 0",
     "build": "echo \"BUILD OK\" && exit 0",
+    "start": "http-server src",
     "prebuild": "npm run version && npm run lint && npm run test"
   },
   "repository": {
@@ -31,6 +32,7 @@
   "homepage": "https://github.com/bohandley/react-tdd#readme",
   "devDependencies": {
     "eslint": "^4.14.0",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-react": "^7.5.1",
+    "http-server": "^0.10.0"
   }
 }
