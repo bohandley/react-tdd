@@ -2,11 +2,15 @@
   "name": "react-tdd",
   "version": "1.0.0",
   "description": "test driven development with react.js",
+  "engines": {
+    "node": "4.4.2"
+  },
   "main": "index.js",
   "scripts": {
+    "version": "node version-check.js",
     "test": "echo \"All tests passed\" && exit 0",
     "build": "echo \"BUILD OK\" && exit 0",
-    "prebuild": "npm run test"
+    "prebuild": "npm run version && npm run test"
   },
   "repository": {
     "type": "git",
