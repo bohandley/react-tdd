@@ -1,0 +1,25 @@
+{
+  "name": "react-tdd",
+  "version": "1.0.0",
+  "description": "test driven development with react.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bohandley/react-tdd.git"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "tdd",
+    "npm"
+  ],
+  "author": "Brendan O'Handley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bohandley/react-tdd/issues"
+  },
+  "homepage": "https://github.com/bohandley/react-tdd#readme"
+}
