@@ -1,4 +1,4 @@
-const sayHello = require('../src/sayHello.js');
+const sayHello = require('../src/scripts/sayHello.js');
 
 describe('Greet', function() { 
     it('concats Hello and a name', function() {

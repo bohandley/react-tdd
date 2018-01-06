@@ -12,7 +12,8 @@
     "jasmine": "jasmine",
     "test": "karma start --singleRun",
     "build": "echo \"BUILD OK\" && exit 0",
-    "start": "http-server src",
+    "start": "http-server dist",
+    "bundle": "webpack",
     "prebuild": "npm run version && npm run lint && npm run test"
   },
   "repository": {
@@ -39,6 +40,7 @@
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-commonjs": "^1.0.0",
-    "karma-jasmine": "^1.1.1"
+    "karma-jasmine": "^1.1.1",
+    "webpack": "^3.10.0"
   }
 }
