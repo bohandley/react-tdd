@@ -9,7 +9,8 @@
   "scripts": {
     "version": "node version-check.js",
     "lint": "eslint . --ext .js --fix",
-    "test": "jasmine",
+    "jasmine": "jasmine",
+    "test": "karma start --singleRun",
     "build": "echo \"BUILD OK\" && exit 0",
     "start": "http-server src",
     "prebuild": "npm run version && npm run lint && npm run test"
