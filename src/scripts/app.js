@@ -1,3 +1,5 @@
 console.log('Hello world!');
 var sayHello = require('./sayHello.js');
-document.getElementById('welcome-message').innerHTML = sayHello.greet('Your name');
+window.addEventListener('load',()=>{
+    document.getElementById('welcome-message').innerHTML = sayHello.greet('Brendan');
+});
