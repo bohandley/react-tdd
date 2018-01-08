@@ -1,24 +1,9 @@
-// ES6 syntax
-export let greet = (name) => {
-  if ( name === undefined ) {
-      return 'Hello, Friend';
-  } else {
-      return 'Hello, ' + name;
-  }  
+import React from 'react';
+
+class SayHello extends React.Component {
+    render() {
+        return(<h1>Hello, {this.props.name}</h1>);
+    }
 }
 
-// export function greet(name {
-//   if ( name === undefined ) {
-//       return 'Hello, Friend';
-//   } else {
-//       return 'Hello, ' + name;
-//   }
-// });
-
-// exports.greet = function greet(name) {
-//     if ( name === undefined ) {
-//         return 'Hello, Friend';
-//     } else {
-//         return 'Hello, ' + name;
-//     }
-// };
+export default SayHello;
