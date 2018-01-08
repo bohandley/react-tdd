@@ -1,8 +1,5 @@
-// ES6 syntax
-import * as sayHello from './sayHello.js'
-window.addEventListener('load',()=>{
-    document.getElementById('welcome-message').innerHTML = sayHello.greet('Brendan');
-});
+import React from 'react';
+import ReactDom from 'react-dom';
+import SayHello from './SayHello';
 
-// console.log('Hello world!');
-// var sayHello = require('./sayHello.js');
+ReactDom.render(<SayHello name="World" />, document.getElementById('app'));
