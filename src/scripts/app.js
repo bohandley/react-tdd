@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import SayHello from './SayHello';
+import PollContainer from '../containers/PollContainer';
 
-ReactDom.render(<SayHello name="World" />, document.getElementById('app'));
+ReactDom.render(<PollContainer name="World" />, document.getElementById('app'));
