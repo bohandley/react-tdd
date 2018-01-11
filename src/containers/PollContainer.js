@@ -5,14 +5,25 @@ import PollAnswer from '../components/PollAnswer';
 import PollSubmitButton from '../components/PollSubmitButton';
 
 class PollContainer extends React.Component {
+    constructor(){
+      super();
+      this.state = {
+        header: 'Welcome to the Poll!',
+        question: 'What is the meaning of life?',
+        answer1: 'Who knows?',
+        answer2: 'More life.',
+        answer3: 'It is complex',
+        correctAnswer: 'Who knows?'
+      };
+    };
     render(){
         return(
             <div className='container'>
                 <div className='col-sm-4 col-sm-offset-4'>
-                    <PollHeader />
+                    <PollHeader text={this.state.header} />
                     <form>
-                        <PollQuestion />
-                        <PollAnswer />
+                        <PollQuestion text={this.state.question} />
+                        <PollAnswer text={this.state.answer1} />
                         <PollSubmitButton />
                     </form>
                 </div>
