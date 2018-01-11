@@ -24,6 +24,8 @@ class PollContainer extends React.Component {
                     <form>
                         <PollQuestion text={this.state.question} />
                         <PollAnswer text={this.state.answer1} />
+                        <PollAnswer text={this.state.answer2} />
+                        <PollAnswer text={this.state.answer3} />
                         <PollSubmitButton />
                     </form>
                 </div>

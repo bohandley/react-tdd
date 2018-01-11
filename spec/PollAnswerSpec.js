@@ -4,6 +4,7 @@ import PollAnswer from '../src/components/PollAnswer.js';
 
 describe('PollAnswer', function(){
     var component;
+    
     beforeEach(function(){
       component = TestUtils.renderIntoDocument(<PollAnswer text="Who knows?" />)
     });
