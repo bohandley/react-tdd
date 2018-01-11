@@ -9,7 +9,7 @@ class PollAnswer extends React.Component {
                     name="Answers"
                     value="I don't know."
                 />
-                <span>Who knows?</span>
+                <span>{this.props.text}</span>
             </div>
         );
     }
